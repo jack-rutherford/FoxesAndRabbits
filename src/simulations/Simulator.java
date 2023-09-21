@@ -22,7 +22,7 @@ import java.awt.*;
  * @author David J. Barnes and Michael Kölling
  * @version 2016.02.29
  */
-public class Simulator1 extends JFrame
+public class Simulator extends JFrame
 {
 	// Constants representing configuration information for the simulation.
 	// The default width for the grid.
@@ -54,7 +54,7 @@ public class Simulator1 extends JFrame
 	/**
 	 * Construct a simulation field with default size.
 	 */
-	public Simulator1()
+	public Simulator()
 	{
 
 		this(DEFAULT_DEPTH, DEFAULT_WIDTH);
@@ -78,7 +78,7 @@ public class Simulator1 extends JFrame
 	 * @param depth Depth of the field. Must be greater than zero.
 	 * @param width Width of the field. Must be greater than zero.
 	 */
-	public Simulator1(int depth, int width)
+	public Simulator(int depth, int width)
 	{
 		if(width <= 0 || depth <= 0) {
 			System.out.println("The dimensions must be >= zero.");
@@ -373,7 +373,7 @@ public class Simulator1 extends JFrame
 	 */
 	public static void main(String[] args) {
 		//startSimulation();
-		Simulator1 simulate = new Simulator1(80,120);
+		Simulator simulate = new Simulator(80,120);
 //		  simulate.simulate(62290);
 	}
 
